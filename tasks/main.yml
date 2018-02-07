@@ -1,0 +1,8 @@
+---
+- name: Wimseys' Virtual Vault Plugin loaded
+  set_fact:
+    vvault_loaded: true
+  when: vvault_loaded is not defined
+  tags:
+    - always
+
